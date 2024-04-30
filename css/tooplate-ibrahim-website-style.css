@@ -56,7 +56,7 @@
 
   body {
     font-family: var(--base-font-family);
-    background-color: var(--white-color);
+    background-color: var(--dark-color);
   }
 
 
@@ -392,6 +392,8 @@
 
   .testimonials-image img {
     border-radius: var(--border-radius-medium);
+    width: 200px;
+    height: 80px;
   }
 
   .testimonials-info {
@@ -640,7 +642,7 @@ SKILL
 .details {
   text-align: justify;
   overflow: hidden;
-  background-color: white; /* Add background color */
+  /* background-color: white;  Add background color */
   padding: 10px; /* Add padding for spacing */
 }
 
@@ -658,6 +660,10 @@ CERTIFICATIONS
 .certificate{
   width: 100%;
 }
+
+.certificate h2 {
+  color: white;
+  }
 
 .certificate-container{
   align-items: center;
@@ -736,6 +742,7 @@ CERTIFICATIONS
   margin: 0 50px;
   padding: 0 12px;
   text-transform: capitalize;
+  color: white;
   }
   
   .certificate-controls-button:focus{
@@ -747,7 +754,7 @@ CERTIFICATIONS
   }
 
   .certificate-controls-previous::before{
-    border: solid #000;
+    border: solid white;
     border-width: 0 5px 5px 0;
     content: '';
     display: inline-block;
@@ -770,7 +777,7 @@ CERTIFICATIONS
   }
 
   .certificate-controls-next::before{
-    border: solid #000;
+    border: solid white;
     border-width: 0 5px 5px 0;
     content: '';
     display: inline-block;
