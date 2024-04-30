@@ -818,3 +818,28 @@ CERTIFICATIONS
  .certificate-nav li.certificate-item-selected{
   background: #555;
  }
+
+  /*-----------------------------------------
+RESEARCH INTEREST
+----------------------------------*/
+
+ .research-interests {
+  display: flex;
+  flex-direction: column;
+}
+
+.interest-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.interest-text {
+  margin-right: 20px;
+  color: gray;
+}
+
+.interest-image {
+  max-width: 300px;
+  max-height: 200px;
+}
