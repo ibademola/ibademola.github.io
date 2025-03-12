@@ -9889,7 +9889,20 @@ h3 {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
 }
+#more-highlights {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
 
 
+/* Remove extra spacing at the end of both lists */
+ul:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 
-/*# sourceMappingURL=style.css.map */
+ul li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
