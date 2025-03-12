@@ -1,7 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("see-more-btn").addEventListener("click", function() {
-        let moreHighlights = document.getElementById("more-highlights");
+    const moreHighlights = document.getElementById("more-highlights");
+    const seeMoreBtn = document.getElementById("see-more-btn");
+    const seeLessBtn = document.getElementById("see-less-btn");
+
+    seeMoreBtn.addEventListener("click", function() {
         moreHighlights.style.display = "block"; // Show the hidden section
-        this.style.display = "none"; // Hide the button
+        seeMoreBtn.style.display = "none"; // Hide "Show More" button
+        seeLessBtn.style.display = "inline-block"; // Show "Show Less" button
+    });
+
+    seeLessBtn.addEventListener("click", function() {
+        moreHighlights.style.display = "none"; // Hide the additional highlights
+        seeLessBtn.style.display = "none"; // Hide "Show Less" button
+        seeMoreBtn.style.display = "inline-block"; // Show "Show More" button
     });
 });
